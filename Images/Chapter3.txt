@@ -1,0 +1,17 @@
+
+
+1.    Create an array (using full PHP syntax) named $products that contains the values gum, spam, bread, mayonaise, and eggs.
+
+2.    Create a PHP array called $numbers with elements ranging from 1 to 10.
+
+3.    Replace the first element of the $products array with Fuses.
+
+4.    Given the following $products definition, perform an ascending alphabetical sort on its contents.
+
+       $products = array('Tires', 'Oil', 'Spark Plugs');
+
+5.    Edit the following code to accomplish the goal of reversing the array created by range().
+
+       $numbers = range(1,10);
+
+       $numbers = ___($numbers);

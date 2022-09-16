@@ -1,0 +1,8 @@
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\b\LogicLayerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\b\LogicLayerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\b\LogicLayerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\b\LogicLayerTests\bin\Debug\LogicLayerTests.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\LogicLayerTests\Debug\LogicLayerTests.csproj.AssemblyReference.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\LogicLayerTests\Debug\LogicLayerTests.csproj.CoreCompileInputs.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\LogicLayerTests\Debug\LogicLayerTests.csproj.CopyComplete
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\LogicLayerTests\Debug\LogicLayerTests.dll

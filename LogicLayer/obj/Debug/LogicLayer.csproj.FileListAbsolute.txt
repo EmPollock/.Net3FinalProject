@@ -1,0 +1,15 @@
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataAccessFakes.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataAccessInterfaces.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataObjects.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataAccessFakes.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataAccessInterfaces.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\bin\Debug\DataObjects.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\obj\Debug\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\LogicLayer\obj\Debug\LogicLayer.pdb

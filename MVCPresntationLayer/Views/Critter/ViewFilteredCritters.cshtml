@@ -1,0 +1,33 @@
+﻿@model CritterListViewModel
+@using MVCPresntationLayer.Models;
+@using MVCPresntationLayer.HtmlHelpers;
+@using DataObjects;
+
+@{
+    ViewBag.Title = "All Critters";
+}
+
+<h2>Critters</h2>
+<!--
+
+add later for Island Owner only
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    -->
+<!--@Html.ActionLink("All Currently Catchable", "ViewFilteredCritters", "Critter", new { notCaughtByUser = false, catchable = true }, new { @class="btn btn-primary" })-->
+@Html.ActionLink("Not In Museum", "ViewFilteredCritters", "Critter", new { notCaughtByUser = false, notInMuseum = true }, new { @class = "btn btn-primary" })
+<!--if logged in-->
+@if (Request.IsAuthenticated)
+{
+    @Html.ActionLink("Not Caught", "ViewFilteredCritters", "Critter", new { notCaughtByUser = true, notInMuseum = false }, new { @class = "btn btn-primary" })
+    <!--@Html.ActionLink("Catchable and Not Caught", "ViewFilteredCritters", "Critter", new { notCaughtByUser = true, catchable = true }, new { @class = "btn btn-primary" })-->
+}
+@foreach (var critter in Model.Critters)
+{
+
+    @Html.Partial("CritterCard", critter)
+}
+<div>
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("ViewFilteredCritters", new { page = x, notCaughtByUser = Model.NotCaughtByUser, notInMuseum = Model.NotInMuseum}))
+</div>

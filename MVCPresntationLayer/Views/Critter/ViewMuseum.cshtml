@@ -1,0 +1,21 @@
+﻿@using DataObjects;
+@using Microsoft.AspNet.Identity;
+@using Microsoft.AspNet.Identity.Owin;
+@using MVCPresntationLayer.Models;
+@using MVCPresntationLayer.HtmlHelpers
+@model CritterListViewModel
+
+@{     
+    ViewBag.Title = "Museum";
+}
+
+<h2>Critters in the Museum</h2>
+
+@foreach (var critter in Model.Critters)
+{
+    @Html.Partial("MuseumCritterCard", critter)           
+}
+
+<div>
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("ViewMuseum", new { page = x }))
+</div>

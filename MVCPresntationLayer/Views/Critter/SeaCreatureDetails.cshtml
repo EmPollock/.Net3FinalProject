@@ -1,0 +1,96 @@
+﻿@model DataObjects.SeaCreature
+@{ 
+    ViewBag.Title = Model.CritterId;
+}
+<div class="panel">
+    <div class="panel-heading">
+        <h4>@Model.CritterId</h4>
+    </div>
+    <div class="panel-body table">
+        <div id="seasonality" class="float-l">
+            <h4>Seasonality</h4>
+            <table>
+                <tr>
+                    <td class="@(Model.CatchableMonths.Contains("Jan") ? "bg-primary" : "")"> &nbsp;Jan&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("Feb") ? "bg-primary" : "")"> &nbsp;Feb&nbsp; </td>
+                    <td class="@(Model.CatchableMonths.Contains("Mar") ? "bg-primary" : "")"> &nbsp;Mar&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("Apr") ? "bg-primary" : "")"> &nbsp;Apr&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="@(Model.CatchableMonths.Contains("May") ? "bg-primary" : "")"> &nbsp;May&nbsp; </td>
+                    <td class="@(Model.CatchableMonths.Contains("June") ? "bg-primary" : "")"> &nbsp;June&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("July") ? "bg-primary" : "")"> &nbsp;July&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("Aug") ? "bg-primary" : "")"> &nbsp;Aug&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="@(Model.CatchableMonths.Contains("Sep") ? "bg-primary" : "")"> &nbsp;Sept&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("Oct") ? "bg-primary" : "")"> &nbsp;Oct&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("Nov") ? "bg-primary" : "")"> &nbsp;Nov&nbsp;</td>
+                    <td class="@(Model.CatchableMonths.Contains("Dec") ? "bg-primary" : "")"> &nbsp;Dec&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p><strong>Type:</strong> @Model.CritterTypeId</p>
+            <p><strong>Sells for:</strong> @Model.Price Bells</p>
+        </div>
+        <div class="float-n" id="hours">
+            <h4>Active Hours</h4>
+            <table>
+                <tr>
+                    <td class="@(Model.CatchableHours.Contains(24) ? "bg-primary" : "")">12 AM</td>
+                    <td class="@(Model.CatchableHours.Contains(1) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(2) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(3) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(4) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(5) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(6) ? "bg-primary" : "")">6 AM</td>
+                    <td class="@(Model.CatchableHours.Contains(7) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(8) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(9) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(10) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(11) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(12) ? "bg-primary" : "")">12 PM</td>
+                    <td class="@(Model.CatchableHours.Contains(13) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(14) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(15) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(16) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(17) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(18) ? "bg-primary" : "")">6 PM</td>
+                    <td class="@(Model.CatchableHours.Contains(19) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(20) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(21) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(22) ? "bg-primary" : "")"> | </td>
+                    <td class="@(Model.CatchableHours.Contains(23) ? "bg-primary" : "")"> | </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <br>
+            @if (!Model.CaughtByCurrentUser)
+            {
+                <p>Not Caught @Html.ActionLink("Catch", "Catch", new { Model.CritterId }, new { @class = "btn btn-primary" })</p>
+
+            }
+            else
+            {
+                <p>Already caught</p>
+            }
+            <br />
+            @if (!Model.InMuseum)
+            {
+                <p>Not in Museum @Html.ActionLink("Put into Museum", "Museumify", new { Model.CritterId }, new { @class = "btn btn-primary" })</p>
+            }
+            else
+            {
+                <p>Put into the museum by: @Model.MuseumBy</p>
+            }
+        </div>
+        <div class="float-n">
+            <p><strong>Movement Type: </strong>@Model.movementId</p>
+            <p><strong>Shadow Size: </strong>@Model.ShadowSizeId</p>
+        </div>
+    </div>
+</div>
+
+

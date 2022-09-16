@@ -1,0 +1,6 @@
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataObjects\obj\Debug\DataObjects.csproj.CoreCompileInputs.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataObjects\obj\Debug\DataObjects.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataObjects\obj\Debug\DataObjects.csproj.AssemblyReference.cache

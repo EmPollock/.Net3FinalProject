@@ -1,0 +1,4 @@
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\b\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\DataAccessLayer\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\DataAccessLayer\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\Pollock\source\repos\CritterpediaPlus\.vs\CritterpediaPlus\v16\lut\0\i\DataAccessLayer\Debug\DataAccessLayer.dll

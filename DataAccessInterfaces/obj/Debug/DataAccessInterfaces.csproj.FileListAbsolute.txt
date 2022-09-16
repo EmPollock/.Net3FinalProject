@@ -1,0 +1,9 @@
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\bin\Debug\DataAccessInterfaces.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\bin\Debug\DataAccessInterfaces.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\bin\Debug\DataObjects.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\bin\Debug\DataObjects.pdb
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\obj\Debug\DataAccessInterfaces.csproj.AssemblyReference.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\obj\Debug\DataAccessInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\obj\Debug\DataAccessInterfaces.csproj.CopyComplete
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\obj\Debug\DataAccessInterfaces.dll
+C:\Users\Pollock\source\repos\CritterpediaPlus\DataAccessInterfaces\obj\Debug\DataAccessInterfaces.pdb

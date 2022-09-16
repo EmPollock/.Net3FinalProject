@@ -1,0 +1,147 @@
+﻿<Window x:Class="CritterpediaPlus.AddEditDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CritterpediaPlus"
+        mc:Ignorable="d"
+        Title="DetailAddEdit" Height="550" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition MinHeight="90"></RowDefinition>
+            <RowDefinition MinHeight="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Critter Name:</Label>
+        <TextBox x:Name="txtCritterName" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="20" Width="300"></TextBox>
+        <Label Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0">Critter Type:</Label>
+        <ComboBox x:Name="cboCritterType" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300" SelectionChanged="cboCritterType_SelectionChanged" ></ComboBox>
+        <Label Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Price:</Label>
+        <TextBox x:Name="txtPrice" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" HorizontalContentAlignment="Right" VerticalAlignment="Center" Height="20" Width="300"></TextBox>
+        <Label Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="300,0,0,0">Bells</Label>
+        <Label Grid.Row="4" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >In Museum</Label>
+        <CheckBox x:Name="chkInMuseum" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,200,0"></CheckBox>
+        <Label Grid.Row="5" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Rain Needed</Label>
+        <CheckBox x:Name="chkRainNeeded" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,200,0"></CheckBox>
+        <Label Grid.Row="6" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >How to Catch:</Label>
+        <TextBox x:Name="txtCatchDescription" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" HorizontalContentAlignment="Right" VerticalAlignment="Center" Height="20" Width="300"></TextBox>
+        <Label Grid.Row="7" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Caught by Me:</Label>
+        <CheckBox x:Name="chkCaughtByCurrentUser" Grid.Row="7" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,200,0"></CheckBox>
+        <Label Grid.Row="8" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Seasonality:</Label>
+        <Grid Grid.Row="8" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10px"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="10px"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <CheckBox Grid.Row="1" Grid.Column="0" x:Name="chkJan">Jan</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="1" x:Name="chkFeb">Feb</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="2" x:Name="chkMar">Mar</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="3" x:Name="chkApr">Apr</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="0" x:Name="chkMay">May</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="1" x:Name="chkJune">June</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="2" x:Name="chkJuly">July</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="3" x:Name="chkAug">Aug</CheckBox>
+            <CheckBox Grid.Row="3" Grid.Column="0" x:Name="chkSep">Sep</CheckBox>
+            <CheckBox Grid.Row="3" Grid.Column="1" x:Name="chkOct">Oct</CheckBox>
+            <CheckBox Grid.Row="3" Grid.Column="2" x:Name="chkNov">Nov</CheckBox>
+            <CheckBox Grid.Row="3" Grid.Column="3" x:Name="chkDec">Dec</CheckBox>
+        </Grid>
+        <Label Grid.Row="9" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Active Hours:</Label>
+        <Grid Grid.Row="9" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10px"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="10px"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="10px"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <CheckBox Grid.Row="1" Grid.Column="0" x:Name="chk1AM">1 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="1" x:Name="chk2AM">2 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="2" x:Name="chk3AM">3 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="3" x:Name="chk4AM">4 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="4" x:Name="chk5AM">5 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="5" x:Name="chk6AM">6 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="6" x:Name="chk7AM">7 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="7" x:Name="chk8AM">8 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="8" x:Name="chk9AM">9 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="9" x:Name="chk10AM">10 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="10" x:Name="chk11AM">11 AM</CheckBox>
+            <CheckBox Grid.Row="1" Grid.Column="11" x:Name="chk12PM">12 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="0" x:Name="chk1PM">1 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="1" x:Name="chk2PM">2 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="2" x:Name="chk3PM">3 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="3" x:Name="chk4PM">4 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="4" x:Name="chk5PM">5 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="5" x:Name="chk6PM">6 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="6" x:Name="chk7PM">7 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="7" x:Name="chk8PM">8 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="8" x:Name="chk9PM">9 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="9" x:Name="chk10PM">10 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="10" x:Name="chk11PM">11 PM</CheckBox>
+            <CheckBox Grid.Row="2" Grid.Column="11" x:Name="chk12AM">12 AM</CheckBox>
+        </Grid>
+        <Label x:Name="lblLocation" Grid.Row="10" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Location:</Label>
+        <ComboBox x:Name="cboLocation" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300"></ComboBox>
+        <Label x:Name="lblSpot" Grid.Row="10" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Spot:</Label>
+        <ComboBox x:Name="cboSpot" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300"></ComboBox>
+        <Label x:Name="lblShadowSize" Grid.Row="11" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Shadow Size:</Label>
+        <ComboBox x:Name="cboShadowSize" Grid.Row="11" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300"></ComboBox>
+        <Label x:Name="lblMovement" Grid.Row="10" Grid.Column="0" HorizontalContentAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" >Movement Type:</Label>
+        <ComboBox x:Name="cboMovement" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300"></ComboBox>
+        <Grid Grid.Row="14" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75px"></ColumnDefinition>
+                <ColumnDefinition Width="150px"></ColumnDefinition>
+                <ColumnDefinition Width="75px"></ColumnDefinition>
+                <ColumnDefinition Width="150px"></ColumnDefinition>
+                <ColumnDefinition Width="75px"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnEditSave" Grid.Column="0" Click="btnEditSave_Click">Edit</Button>
+            <Button x:Name="btnCancel" Grid.Column="2" Click="btnCancel_Click">Cancel</Button>
+            <Button x:Name="btnDelete" Grid.Column="4" Click="btnDelete_Click">Delete</Button>
+        </Grid>
+
+    </Grid>
+</Window>
